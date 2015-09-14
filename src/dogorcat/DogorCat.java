@@ -27,11 +27,9 @@ public class DogorCat {
         System.out.println("The cats name is Athena");
         System.out.println("The Gecko's name is Giuseppe");
 
-        System.out.println("A pet is in the room, you however are blind and have"
-                + " no sense of touch.");
+        System.out.println("A pet is in the room, you however are blind and have \n no sense of touch.");
 
-        System.out.println("Luckly for you can hear, and read the pet's"
-                + " mind and have its actions described to you.");
+        System.out.println("Luckly for you can hear, and read the pet's \n mind and have its actions described to you.");
         System.out.println("Guess the correct pet and you win!");
 
         System.out.println("Press 1 to Start.");
@@ -64,7 +62,7 @@ public class DogorCat {
                     System.out.println("You Lose.");
                 }
 
-            } else if (start == 2) {
+            } else if (pet == 2) {
                 Dog dog = new Dog();
                 if (answer == 1) {
                     dog.speak();
@@ -86,7 +84,7 @@ public class DogorCat {
                 } else {
                     System.out.println("You Lose.");
                 }
-            } else {
+            } else if (pet == 3) {
                 Gecko gecko = new Gecko();
                 if (answer == 1) {
                     gecko.speak();
@@ -109,7 +107,9 @@ public class DogorCat {
                     System.out.println("You Lose.");
                 }
             }
-
+            else {
+                System.out.println(pet);
+            }
         } else {
             System.out.println("Fine don't play.");
         }
