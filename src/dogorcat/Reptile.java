@@ -11,6 +11,11 @@ package dogorcat;
  */
 public abstract class Reptile implements Animal{
             
+    // this class implements the abstract methods from the Animal intervafe, 
+    
+    // However being an abstract class it does not need to delcare them.
+    
+    
      private String name = "Giuseppe";
      private String msg = "You Win I'm Giuseppe the Gecko!";
 
