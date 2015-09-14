@@ -25,6 +25,7 @@ public class DogorCat {
         System.out.println(" ");
         System.out.println("The dogs name is Jasper");
         System.out.println("The cats name is Athena");
+        System.out.println("The Gecko's name is Giuseppe");
 
         System.out.println("A pet is in the room, you however are blind and have"
                 + " no sense of touch.");
@@ -51,25 +52,21 @@ public class DogorCat {
                 } else {
                     System.out.println("I don't understand you goodbye.");
                 }
-                
+
                 keyboard.nextLine();
                 System.out.println(" ");
                 System.out.println("What is your pets name?");
                 petName = keyboard.nextLine();
-                
-                
-                
+
                 if (cat.getName() == null ? petName == null : cat.getName().equals(petName)) {
                     System.out.println(cat.getMsg());
                 } else {
                     System.out.println("You Lose.");
                 }
 
-            }
-
-            else if (start == 2) {
-            Dog dog = new Dog();
-            if (answer == 1) {
+            } else if (start == 2) {
+                Dog dog = new Dog();
+                if (answer == 1) {
                     dog.speak();
                 } else if (answer == 2) {
                     dog.readMind();
@@ -78,23 +75,20 @@ public class DogorCat {
                 } else {
                     System.out.println("I don't understand you goodbye.");
                 }
-                
+
                 keyboard.nextLine();
                 System.out.println(" ");
                 System.out.println("What is your pets name?");
                 petName = keyboard.nextLine();
-                
-                
-                
+
                 if (dog.getName() == null ? petName == null : dog.getName().equals(petName)) {
                     System.out.println(dog.getMsg());
                 } else {
                     System.out.println("You Lose.");
                 }
-        }
-            else {
+            } else {
                 Gecko gecko = new Gecko();
-            if (answer == 1) {
+                if (answer == 1) {
                     gecko.speak();
                 } else if (answer == 2) {
                     gecko.readMind();
@@ -103,14 +97,12 @@ public class DogorCat {
                 } else {
                     System.out.println("I don't understand you goodbye.");
                 }
-                
+
                 keyboard.nextLine();
                 System.out.println(" ");
                 System.out.println("What is your pets name?");
                 petName = keyboard.nextLine();
-                
-                
-                
+
                 if (gecko.getName() == null ? petName == null : gecko.getName().equals(petName)) {
                     System.out.println(gecko.getMsg());
                 } else {
@@ -118,9 +110,8 @@ public class DogorCat {
                 }
             }
 
-        }
-        else {
+        } else {
             System.out.println("Fine don't play.");
-    }
+        }
     }
 }
