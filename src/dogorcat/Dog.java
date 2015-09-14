@@ -11,8 +11,8 @@ package dogorcat;
  */
 public class Dog implements Animal {
 
-    private String name = "Jasper";
-    private String msg = "You Win I'm Jasper the Dog!";
+    private final String name = "Jasper";
+    private final String msg = "You Win I'm Jasper the Dog!";
 
     public String getMsg() {
         return msg;

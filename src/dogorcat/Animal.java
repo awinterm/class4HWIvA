@@ -5,9 +5,11 @@
  */
 package dogorcat;
 
-
 public interface Animal {
+
     public void readMind();
+
     public void speak();
+
     public void doSomething();
 }

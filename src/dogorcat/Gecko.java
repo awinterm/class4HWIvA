@@ -5,26 +5,21 @@
  */
 package dogorcat;
 
-
 public class Gecko extends Reptile {
-    
+
     // this class inherits its properties and methods from the Reptile class
-    
-    
-    
-    
-    
     @Override
-    public void speak(){
+    public void speak() {
         System.out.println("I can't.");
     }
+
     @Override
-    public void readMind(){
+    public void readMind() {
         System.out.println("I want crickets in my mouth.");
     }
-   
+
     @Override
-    public void doSomething(){
+    public void doSomething() {
         System.out.println("Sits on his heat Rock.");
     }
 }
