@@ -17,6 +17,8 @@ public class DogorCat {
         int start;
         int pet;
         int answer;
+        
+      
         String petName;
 
         Random num = new Random();
