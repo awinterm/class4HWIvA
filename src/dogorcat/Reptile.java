@@ -11,7 +11,15 @@ package dogorcat;
  */
 public abstract class Reptile implements Animal{
             
-     private String name = "Jasper";
-     private String msg = "You Win I'm Jasper the Dog!";
+     private String name = "Giuseppe";
+     private String msg = "You Win I'm Giuseppe the Gecko!";
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
 
 }

@@ -7,5 +7,17 @@ package dogorcat;
 
 
 public class Gecko extends Reptile {
-    
+    @Override
+    public void speak(){
+        System.out.println("I can't.");
+    }
+    @Override
+    public void readMind(){
+        System.out.println("I want crickets in my mouth.");
+    }
+   
+    @Override
+    public void doSomething(){
+        System.out.println("Sits on his heat Rock.");
+    }
 }

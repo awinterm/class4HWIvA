@@ -38,7 +38,7 @@ public class DogorCat {
         System.out.println("You can... 1. Listen to your pet, 2. Read your pets mind, or 3. Watch your pets behavior.");
         answer = keyboard.nextInt();
         if (start == 1) {
-            pet = num.nextInt(2 - 1 + 1) + 1;
+            pet = num.nextInt(3 - 1 + 1) + 1;
             if (pet == 1) {
                 Cat cat = new Cat();
 
@@ -67,7 +67,7 @@ public class DogorCat {
 
             }
 
-        else {
+            else if (start == 2) {
             Dog dog = new Dog();
             if (answer == 1) {
                     dog.speak();
@@ -92,7 +92,31 @@ public class DogorCat {
                     System.out.println("You Lose.");
                 }
         }
-    
+            else {
+                Gecko gecko = new Gecko();
+            if (answer == 1) {
+                    gecko.speak();
+                } else if (answer == 2) {
+                    gecko.readMind();
+                } else if (answer == 3) {
+                    gecko.doSomething();
+                } else {
+                    System.out.println("I don't understand you goodbye.");
+                }
+                
+                keyboard.nextLine();
+                System.out.println(" ");
+                System.out.println("What is your pets name?");
+                petName = keyboard.nextLine();
+                
+                
+                
+                if (gecko.getName() == null ? petName == null : gecko.getName().equals(petName)) {
+                    System.out.println(gecko.getMsg());
+                } else {
+                    System.out.println("You Lose.");
+                }
+            }
 
         }
         else {

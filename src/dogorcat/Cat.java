@@ -28,7 +28,7 @@ public class Cat implements Animal {
     
     @Override
     public void speak(){
-        System.out.println("No.");
+        System.out.println("Meow.");
     }
     @Override
     public void readMind(){
